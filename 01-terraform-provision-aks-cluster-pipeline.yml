@@ -38,9 +38,9 @@ stages:
           backendServiceArm: 'terraform-aks-azurerm-svc-con'
           backendAzureRmSubscriptionId: 'fa697c84-f970-4b13-96d8-f7ebf78ef51d'
           ensureBackend: true
-          backendAzureRmResourceGroupName: 'terraform-aks'
+          backendAzureRmResourceGroupName: 'raj-devops'
           backendAzureRmResourceGroupLocation: 'eastus'
-          backendAzureRmStorageAccountName: 'terraformstatexlrwdraj2'
+          backendAzureRmStorageAccountName: 'terraformstatexlrwdraj'
           backendAzureRmContainerName: 'tfstatefiles'
           backendAzureRmKey: 'aks-base-tfstate'
           allowTelemetryCollection: false
@@ -81,7 +81,7 @@ stages:
                 workingDirectory: '$(Pipeline.Workspace)/terraform-manifests-out'
                 backendType: 'azurerm'
                 backendServiceArm: 'terraform-aks-azurerm-svc-con'
-                backendAzureRmResourceGroupName: 'raj-devops'
+                backendAzureRmResourceGroupName: 'terraform-aks'
                 backendAzureRmStorageAccountName: 'terraformstatexlrwdraj2'
                 backendAzureRmContainerName: 'tfstatefiles'
                 backendAzureRmKey: 'aks-$(DEV_ENVIRONMENT).tfstate'
