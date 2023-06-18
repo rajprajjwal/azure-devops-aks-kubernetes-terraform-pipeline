@@ -40,7 +40,7 @@ stages:
           ensureBackend: true
           backendAzureRmResourceGroupName: 'terraform-aks'
           backendAzureRmResourceGroupLocation: 'eastus'
-          backendAzureRmStorageAccountName: 'terraformstatexlrwdraj'
+          backendAzureRmStorageAccountName: 'terraformstatexlrwdraj2'
           backendAzureRmContainerName: 'tfstatefiles'
           backendAzureRmKey: 'aks-base-tfstate'
           allowTelemetryCollection: false
